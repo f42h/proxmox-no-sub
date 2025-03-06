@@ -26,8 +26,8 @@ rm "$pve_enterprise_list"
 printf "Removing %s\n.." "$ceph_list"
 rm "$ceph_list"
 
-no_sub_repo_pve="http://download.proxmox.com/debian/pve bookworm pve-no-subscription"
-no_sub_repo_ceph="http://download.proxmox.com/debian/ceph-reef bookworm no-subscription"
+no_sub_repo_pve="deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription"
+no_sub_repo_ceph="deb http://download.proxmox.com/debian/ceph-reef bookworm no-subscription"
 
 echo "Creating new sources lists.."
 echo "$no_sub_repo_pve" |tee -a "$pve_enterprise_list"
