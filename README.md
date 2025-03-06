@@ -6,6 +6,6 @@ When Proxmox (VE installer iso) is installed, the Enterprise repositories are se
 
 # Run
 ```
-curl -o script.sh https://raw.githubusercontent.com/f42h/proxmox-no-sub/refs/heads/main/script.sh | chmod +x script.sh && ./script.sh
+curl -o script.sh https://raw.githubusercontent.com/f42h/proxmox-no-sub/refs/heads/main/script.sh && bash script.sh
 ```
 - This will download the automation script, backup the original repo sources, update the repositories and perform an update
