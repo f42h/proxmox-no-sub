@@ -38,6 +38,6 @@ echo "Repo update complete!"
 echo "Running distribution update.."
 sleep 5
 
-apt-get update && apt-get upgrade
+apt-get update && apt-get dist-upgrade
 
 echo "Setup complete!"
